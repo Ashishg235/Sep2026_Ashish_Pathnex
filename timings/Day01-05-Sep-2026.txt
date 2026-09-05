@@ -1,0 +1,4 @@
+Installed VS Code
+Installed WSL to use Linux 
+Created Account on AWS Console
+Created Repository on Git
