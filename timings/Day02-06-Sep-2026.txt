@@ -1,0 +1,3 @@
+- Practiced basic git commands like status, add, commit, push, pull, switch/checkout
+- Learnt how to navigate to directory and open vs code to create new files  and update content to them
+- pushed these daily task files to github branch then merged with main branch
