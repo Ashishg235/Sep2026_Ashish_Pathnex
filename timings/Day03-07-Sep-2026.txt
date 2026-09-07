@@ -1,0 +1,3 @@
+- Practiced few basic commands of Linux
+- Learnt about VPC, EC2, S3 and tried to create this on AWS console
+- Watched previous sessions videos to revise course so far
