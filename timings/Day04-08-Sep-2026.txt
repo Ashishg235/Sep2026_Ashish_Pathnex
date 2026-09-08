@@ -1,0 +1,3 @@
+- Revised AWS services taught in today's class, Session Manager, Route 53, ColudTrail, CloudWatch and more 
+- Revised Linux chmod, chown commands and also practiced git stash
+- Watched demo videos of introduction to create one for myself
