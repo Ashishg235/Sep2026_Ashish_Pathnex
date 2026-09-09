@@ -1,0 +1,4 @@
+- Started using EC2 to push daily tasks on Git instead of local
+- Configured git on EC2 using SSH 
+- Revised Linux class 2
+- Revised all the AWS services taught so far, not deeply only overview
