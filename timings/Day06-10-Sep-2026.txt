@@ -1,0 +1,4 @@
+- Revised Docker from previous month videos, learnt DockerFile, Docker Image, Docker Container and more
+- Revised Linux class 3 of September batch
+- Worked on introduction content for the video
+- Learnt about ports, ssh 22, http 80, https 443, Node.js 3000, web 8080
