@@ -1,0 +1,4 @@
+- Revised concepts of Kubernetes, tried to understand workflow
+- Linux practice online with games
+- Practiced introduction video content to speak
+- Access creation using IAM on AWS 
