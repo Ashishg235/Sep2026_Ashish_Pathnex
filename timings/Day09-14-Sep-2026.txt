@@ -1,0 +1,4 @@
+- Watched previous month videos of Kubernetes
+- Created EC2 instance using terraform 
+- Created EKS Cluster using AWS Console
+- Did english reading for around 2 hours
