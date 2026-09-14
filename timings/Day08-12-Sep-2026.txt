@@ -1,0 +1,3 @@
+
+- Revised theory part of Kubernetes
+- Practiced inroduction task
