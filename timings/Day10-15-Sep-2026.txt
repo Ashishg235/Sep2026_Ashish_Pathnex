@@ -1,0 +1,4 @@
+- Watched may kubernetes video to understand how an EKS cluster communication happens
+- Created EC2 instance as Bastion host and EKS cluster through AWS console and allowed traffic from EC2 to api-server through editing inbound rules of cluster under security group 
+- Practiced intro video and made corrections 
+- Watched english series and continued my novel for english practice
