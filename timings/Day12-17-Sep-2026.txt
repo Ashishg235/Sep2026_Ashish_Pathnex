@@ -1,0 +1,2 @@
+- Revised Helm class of today 
+- AWS revision of services other than EKS and EC2
