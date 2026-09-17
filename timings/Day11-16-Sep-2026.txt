@@ -1,0 +1,4 @@
+- English practice - reading and listening 
+- Created EKS Cluster using terraform and practiced deamon set, stateful set
+- Gone through Linux class 3 
+- Practiced git stash and learnt how origin command works to push in different branches
