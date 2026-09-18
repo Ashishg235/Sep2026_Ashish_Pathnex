@@ -1,0 +1,3 @@
+- English practice of listening
+- Kubernetes eks cluster creation practice using terraform
+- linux grep and find command practice
