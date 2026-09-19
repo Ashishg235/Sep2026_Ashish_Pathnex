@@ -1,0 +1,2 @@
+- git interview questions practice
+- watched 1st class of previous month of Terraform
