@@ -1,0 +1,2 @@
+- Rewatched today's video of terraform class 2
+- Revised hard and soft link, cron job and linux class 4
