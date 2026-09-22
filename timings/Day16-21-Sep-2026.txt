@@ -1,0 +1,2 @@
+- Linux practice using this month classes and online platform
+- Terraform revision, created EC2 using it
