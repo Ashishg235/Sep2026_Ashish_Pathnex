@@ -1,0 +1,28 @@
+- Practiced git rebase, merge and cherry-pick commands
+- Practiced git workflow:
+git status 
+git pull  
+git checkout -b branch_name 
+git add . 
+git commit -m "message" 
+git push -u origin branch_name 
+merge-pull on UI 
+git switch main 
+git pull 
+git fetch --prune 
+git branch -d branch_name
+git branch -a
+ready for next day
+- Practiced ansible & terraform 
+S# bucket created for tfstate file & lock 
+ec2 creation using terraform code 
+terraform init - for backend file initialization
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+ec2 created - edited inbound rules of default security group to allow ssh from my IP
+created virtual env for installing compatible version of ansible 
+inventory file edited to input public ip's of ec2's, added key file path
+ansible-playbook -i inventory_file playbook_file 
+allowed traffic from http 80 
