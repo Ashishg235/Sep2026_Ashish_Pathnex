@@ -1,0 +1,15 @@
+- Linux practice through Linux Scripting Document
+    sed - Stream Editor - sed 's/error/Error/g' error.log 
+    awk - helpful in filtering content 
+    cronjob - min hour day_of_month month_no day_of_week - to run certan command as schedule defined
+    grep to find something in a file or terminal o/p - grep "error" error.log
+    function - with or without arguments
+    if else 
+    for and while loop
+    Run multiple commands in one line using &&
+    | to use o/p of command on left side as i/p for command on right
+    chmod +x to make file excutable 
+- Linux Interview Questions practice
+- hostname, df -h, free -h, id -un, nano
+- CI/CD revision of today's class
+- Also checked common yaml files of service, pod, deployment, replicaset
