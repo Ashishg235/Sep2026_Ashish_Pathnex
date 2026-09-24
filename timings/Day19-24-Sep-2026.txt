@@ -1,0 +1,9 @@
+- Revised Kubernetes architecture
+	pod lifecycle
+	control plane
+	worker nodes
+	difference b/w kubelet & kube-proxy
+	container runtime
+- AWS Revision - checked few more services
+- Gone through study docs 
+- Tried to create pipeline on Jenkins
