@@ -1,0 +1,80 @@
+## Ansible 
+
+- name: Install Apache
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install apache
+      yum:
+        name: httpd
+        state: present
+
+
+## Terraform
+
+resource "aws_instance" "PathnexEC2" {
+    ami             = "ami-0abcd1234abcd1234"
+    instance_type   = "c6i.8xlarge"
+}
+
+
+## Kubernetes
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: deployment-app
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: deployment
+    template:
+        metadata:
+            labels:
+                app: deployment
+        spec:
+            containers:
+                - name: app
+                  image: nginx
+                  
+
+## Jenkins Pipeline - Using Credentials
+
+pipeline {
+    agent any
+    environment {
+        INSTITUTE_NAME = "Pathnex"
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/Pathnex/sample-java-app.git'
+            }
+        }
+        stage('Use Secret') {
+            steps {
+                withCredentials([string(credentialsID: 'PATHNEX_API_KEY', variable: 'API_KEY')]) {
+                    sh 'echo "Using secret $API_KEY for $INSTITUTE_NAME"'
+                }
+            }
+        }
+    }
+}
+
+
+## GitLab CI - Using CI/CD variable
+
+stages:
+    - build
+
+variables:
+    INSTITUTE_NAME = "Pathnex"
+    API_KEY: "PLACEHOLDER_SECRET"
+
+build:
+    stage: build
+    image: alpine:latest
+    script:
+        - echo "Using secret $API_KEY for $INSTITUTE_NAME"
