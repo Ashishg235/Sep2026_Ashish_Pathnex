@@ -1,0 +1,8 @@
+- Created Kibana Dashboard with different metrics card, bar chart, line chart and table
+- Troubleshooting of eks-cluster with 8 addons, a cluster autoscaler, node-group
+	node-group config was not right due to that addons were getting status DEGRADED
+	while terraform apply - my terraform was crashed most of aws resources were created but terraform state was incomplete due to crash
+	ran terraform plan to identify missing resources
+	imported existing addons to add to local tfstate file
+	same for helm release
+	after updating state file with missing resources terraform plan worked - austoscaler and node-group was created  
