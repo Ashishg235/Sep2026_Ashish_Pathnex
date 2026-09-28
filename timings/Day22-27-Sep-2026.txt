@@ -1,0 +1,2 @@
+- Revised Kafka class
+- Revision of Kubernetes 
