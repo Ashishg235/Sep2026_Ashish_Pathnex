@@ -1,0 +1,14 @@
+- Revised SSL/TLS class
+- practiced creating AWS networking resources using terraform
+    VPC, IGW, NAT GW, Public & Private Subnet, IAM roles & Policy for EKS and Worker Nodes
+    learnt why and how file is used in terraform such as 
+        - outputs: for outputs like url, ip created of resources
+        - variables: var file, infra variables with default values
+        - provider: tells whose resources are we creating and which version
+        - iam: holds all roles used
+        and more
+- Issue I came across while doing so, my AWS console was not showing pods
+  , the pods were running on CLI but not visible on console. Only
+  cluster, ASG, and instances were visible
+  I found that I had to change authentication from CONFIG_MAP to API_AND_CONFIG_MAP,
+  and assigning AmazonEKSClusterViewPolicy to IAM Identity role used to create cluster
