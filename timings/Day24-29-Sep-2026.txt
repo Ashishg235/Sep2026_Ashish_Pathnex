@@ -1,0 +1,3 @@
+- Revised SRE concepts
+- Practiced terraform code 
+- Revisited Helm
