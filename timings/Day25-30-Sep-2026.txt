@@ -1,0 +1,3 @@
+- Kubectl command practice like, get pods, get ReplicaSet, get Deployment, edit, scale, apply -f, delete
+- Wrote deployment and replicaset file by self
+- linux: DNS nameserver of system "cat /etc/resolv.conf"
