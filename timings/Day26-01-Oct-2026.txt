@@ -1,0 +1,5 @@
+- Revised git concepts
+- git interview questions
+- git practice from online resources
+- merge, rebase, cherrypick, log --oneline, head, git branch
+- watched oct 1st video on fast fwd
