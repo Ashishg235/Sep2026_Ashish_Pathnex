@@ -1,0 +1,3 @@
+- Linux & Git revision
+- Kubectl commands practice
+- Git interview questions practice - focused on merge, rebase, cherrypick
