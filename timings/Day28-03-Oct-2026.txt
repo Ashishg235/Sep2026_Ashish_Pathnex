@@ -1,0 +1,4 @@
+- Continue Linux and git practice
+- stash, stash pop, git push origin --delete branch_name, linux ls view 
+- linux class 2 watched of october
+- linux scripting docs studied
