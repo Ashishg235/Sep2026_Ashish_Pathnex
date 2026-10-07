@@ -1,0 +1,4 @@
+- awk and | commands practice
+- Kubernetes practical
+- Istio basics learnt
+- helm revision
