@@ -1,0 +1,2 @@
+- Practiced Linux commands
+    created a project using claude, to use each command somehow
