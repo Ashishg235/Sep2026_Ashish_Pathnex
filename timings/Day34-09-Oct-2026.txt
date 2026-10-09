@@ -1,0 +1,16 @@
+- Terraform revision
+- Linux commands practice 
+	ps aux
+	ps -p pid
+	kill pid
+	kill -9 pid
+	top
+	free -h
+	df -h
+	telnet
+	ss -tuln
+	ss -tulnp | grep port -> to find particular process using a port
+- Git practice
+	merge vs rebase
+	github PR requirment
+	git workflow -> branch to till pull
