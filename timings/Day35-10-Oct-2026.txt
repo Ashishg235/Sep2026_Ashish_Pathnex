@@ -1,0 +1,9 @@
+- Revised Ansible
+	playbook - yml file where we define our tasks which we want ansible to perform on target servers
+	roles - Instead of writing tasks for different environments in a single yml file, roles can help here
+	modules - yum, service, raw
+	inventory - configuration for ansible, target server details are here
+
+	ansible-playbook -i inventory playbook.yml
+
+- Terraform workflow, state file lock and drift
