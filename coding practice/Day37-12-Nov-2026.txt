@@ -1,0 +1,118 @@
+- name: Install Nginx on Pathnex Server
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install Nginx
+      yum:
+        name: nginx
+        state: present
+    
+    - name: Enable Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Create User
+      user:
+        name: pathnex-admin
+        shell: /bin/bash
+
+
+provider "aws" {
+    region = "us-east-1"
+}
+
+resource "aws_instance" "PathnexEC2" {
+    ami             = "0abcd1234abcd1234"
+    instance_type   = "c5.xlarge"
+
+    tags = {
+        Name = "Pathnex-EC2"
+    }
+}
+
+resource "aws_security_group" "PathnexSG" {
+    name        = "PathnexSG"
+    description = "Pathnex SG for SSH"
+
+    ingress {
+        from_port   = 22
+        to_port     = 22
+        protocol    = "tcp"
+        cidr_blocks = ["0.0.0.0/0"] 
+    }
+}
+
+apiVersion: v1
+kind: Pod
+metadata:
+    name: nginx-pod
+spec:
+    containers:
+        - name: web
+          image: nginx
+          ports:
+            - containerPort: 80
+          env:
+            - name: APP_ENV
+              value: "production"
+
+echo "Date: $(date)"
+echo "Hostname: $(hostname)"
+disk usage: df -h
+
+FILE = "/tmp/pathnex.txt"
+
+if [ -f "$FILE" ]; then
+    echo "File exists"
+else
+    echo "File doesn't exists"
+fi
+
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Ashishg235/java-app.git'
+            }
+        }
+        stage('List Files') {
+            steps {
+                sh 'ls -la'
+            }
+        }
+    }
+}
+
+stages:
+    - checkout
+
+git-checkout:
+    stage: checkout
+    script:
+        - git clone https://github.com/Ashishg235/java-app.git
+        - cd java-app
+        - ls -la
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: pathnex-deployment
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+            app: pathnex-app
+    template:
+        metadata:
+            labels:
+                app: pathnex-app
+        spec:
+            containers:
+                - name: web
+                  image: nginx:latest
+                  ports:
+                    - containerPort: 80
